@@ -8,6 +8,8 @@ setBackgroundImage("dungeonFloor.png")
 testSprite = makeSprite("Main_Character_Front.png")
 addSpriteImage(testSprite, "Main_Character_Left.png")
 addSpriteImage(testSprite, "Main_Character_Right.png")
+addSpriteImage(testSprite, "Main Character Back.png")
+
 
 lander = makeSprite("landerCrash.png")
 
@@ -54,7 +56,7 @@ while True:
         xSpeed += 5
 
     elif keyPressed("up"):
-        changeSpriteImage(testSprite, 0)
+        changeSpriteImage(testSprite, 3)
         scrollBackground(0, 5)
         ySpeed += 5
 
